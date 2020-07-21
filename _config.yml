@@ -67,7 +67,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+#url-pretty: "MyWebsite.com"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -163,7 +163,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Europe/Zurich"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
