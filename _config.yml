@@ -1,22 +1,20 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: Under Construction
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: A data science blog around cheminformatics, automation and machine learning in KNIME and Python
 
 # Your name to show in the footer
-author: Some Person
+author: Joos Kiener
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - KNIME: "https://www.knime.com/knime-analytics-platform"
 
 # --- Logo --- #
 
@@ -38,13 +36,11 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  email: "joos.kiener@gmail.com"
+  github: kienerj
   rss: true
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: kienerj
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -65,8 +61,6 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
   linkedin: true
   vk: false
 
