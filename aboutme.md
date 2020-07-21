@@ -1,16 +1,21 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Under Construction
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Joos Kiener and I work in chemical research doing various IT and data science related tasks.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### My Education
 
-What else do you need?
+- Master of Science, ETH Zurich
+- Master of Advanced Studies in Computer Science, Fernfachhochschule Schweiz (FFHS)
+- Diploma of Advanced Studies in Data Science, Fernfachhochschule Schweiz (FFHS)
 
-### my history
+### Skills
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- Python
+  - rdkit, scikit-learn, pandas, numpy, pyspark
+- Java, PHP, JS, HTML, CSS
+- [KNIME](https://www.knime.com/knime-analytics-platform)
+- SQL (Oracle, PostgreSQL), Redis
