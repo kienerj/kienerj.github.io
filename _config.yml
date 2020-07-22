@@ -28,7 +28,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: http://www.laparfumerie.org/uploads/parfumedia/1464181714.jpg
 
 
 # --- Footer options --- #
