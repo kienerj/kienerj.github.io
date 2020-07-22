@@ -17,7 +17,7 @@ for computer science or programming/python for data science.
 
 In summary I'm a Jack of all trades having relevant skills in many areas and being able to bring
 them together in a useful, practical and efficient way. But don't expect me to explain you the inner
-workings of ResNet or design a new architecture from scratch. 
+workings of ResNet or design a new neural network architecture from scratch. 
 
 ## Blog content
 
@@ -28,15 +28,17 @@ publishing it will be much more likely I will rant about yet another not very co
 of ML or "AI" in the general field of chemical research. I do seem agree with [Pat Walters](https://practicalcheminformatics.blogspot.com/) [posts](https://practicalcheminformatics.blogspot.com/2020/05/some-thoughts-on-comparing.html)
 about the state of publishing in regards to ML and "AI".
 
-## About statistics
+I imagine I will also post about some small tricks and tips that only take a couple of sentences to
+write as I'm thinking of such a topic right now. I can also see some posts being really more in the
+software engineering area than data science. 
 
-I'm not very well versed in statistical methods. I admit it. So if you recognize any issues or
-errors in future post regarding this, don't hesitate to comment and explain the found issue. But
-then I don't publish papers in this area. Too much work for what exactly? I like pragmatism over
-absolute correctness. A simple way to test a model in addition to say cross-validation or putting it
-into production and check the outcome (Who has the patience for that?) is simply to apply it on some
-"large" database\*. If your model predicts a large fraction of these >100K compounds to be active,
-you know something can't be right even if the performance metrics from CV and test set look good. 
+## Disclaimer: About statistics
 
-\* of course the molecules in the database should be relevant for the model you are testing.
+I'm not very well versed in statistical methods besides the basics. I admit it. So if you recognize
+any issues or errors in future post regarding this, don't hesitate to comment and explain the found
+issue. I'm for sure an "applied data scientist" and actually more leaning towards data engineering.
+
+Also looking forward to have interesting exchanges also in the comments with future readers. But to
+be realistic I don't expect \(m\)any anytime soon. Part of the goal of this blog is also to showcase my
+portfolio/skills as a social media presence in the Tech/IT fields nowadays seems to required. 
 
