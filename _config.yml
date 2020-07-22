@@ -1,7 +1,7 @@
 # --- Basic options --- #
 
 # Name of website
-title: Under Construction
+title: Smells Good
 
 # Short description of your site
 description: A data science blog around cheminformatics, automation and machine learning with KNIME and Python
@@ -28,7 +28,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: http://www.laparfumerie.org/uploads/parfumedia/1464181714.jpg
+#title-img: http://www.laparfumerie.org/uploads/parfumedia/1464181714.jpg
 
 
 # --- Footer options --- #
