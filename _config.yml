@@ -146,8 +146,8 @@ staticman:
   branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
 #  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance) 
   reCaptcha:
-    siteKey  : 6LfZbLQZAAAAAHl4wPCuCmYsC078oLULN0O2FxOk # Use your own site key, you need to apply for one on Google
-    secret   : FdsN8F6a5FyFIwcu6iW1xkZJ4Q/wITlZV0Hy/pl8R93XNxIfcI3/uC3svBxxmSUVMOv3g106EIrPytTh4H/mlqmpZkhu+XFlommEiTEy30xbL4C1chBlEyxpn5eeDW8hrgUgpdUi1DOx9okHgmPTjOM28uw2xRl+uIEsI1ruf+sS2e5x7lQ0V71behmqXeHSk140mmU/jpxLm48+GWLDYdiR1e4Lche2+LSfL8OXZ4wCoFOReCODZGvvidoxk2yikccQCKdZan8zqn61pEkhfIPSQrWkcX/MwcktvqBl5x2PWo2osmS/yY1csKZQ43WbcYoL4rR2l4dHIvP9bH9iRQ== # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+    siteKey  : 6Ld1bbQZAAAAACvJasoYxwE5OZUcLc39k4Zdq5kt # Use your own site key, you need to apply for one on Google
+    secret   : k2x1JT5SYJr6PHObVac52NrmkV+cXobqguS17iZV1t6VGGm64SmoqO/l3gEZ+yOX9+pH+EDh9KcKYClEDUb/mkAOZWmTLTYthdKqVWtRCPXHLpa7Sws8a80EW9JXDBDqmBrfZT+CISnQKPGs2Z3haZ5ekHjnJ++SOz9rcZhiyHgJ3zeLhdbILAWNP081vYRJtmu+uVBp8FxR3PawYQDTbQjFXWmmfMC6IkaIxkekGBN0uNnsc+SCc3GC/3Ad4arB8BPC5O8xvW8/FmVfcKKA0dtiVUnh9hO+5MUCN/iVTIHkBjHlE3zHGHdbM9bX/6n100+BhGYCwjiw4g+fYhj6YA== # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
 
