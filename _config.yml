@@ -16,6 +16,7 @@ navbar-links:
   Resources:
     - KNIME: "https://www.knime.com/knime-analytics-platform"
     - RDKit: "https://www.rdkit.org/"
+    - Cherrypy: "https://cherrypy.org/"
 
 # --- Logo --- #
 

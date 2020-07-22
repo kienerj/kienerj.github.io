@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: Joos Kiener
 subtitle: Jack of all trades
 ---
 
