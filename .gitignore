@@ -13,3 +13,4 @@ Gemfile.lock
 beautiful-jekyll-theme-*.gem
 /_posts/2020-02-28-test-markdown.md
 /_posts/2020-02-26-flake-it-till-you-make-it.md
+_posts/.vscode/settings.json
