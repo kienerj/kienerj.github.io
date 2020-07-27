@@ -23,7 +23,7 @@ This example isn't that terrible. The actual use-cases I overserved due to this 
 
 ## Scaling the bond length
 
-The issue can be resolved by scaling the bond length to approximately the correct value of 1.5. I need to add that convenience functions like `MolToImage` fix the issue automatically at the cost of losing flexibility in controlling the drawing. If these functions are good enough, you don't need to worry about this problem.  Ok,now show me the code! OK, here you go. This should be used in the context of a notebook.
+The issue can be resolved by scaling the bond length to approximately the correct value of 1.5. I need to add that convenience functions like `MolToImage` fix the issue automatically at the cost of losing flexibility in controlling the drawing. If these functions are good enough, you don't need to worry about this problem.  Another option to easily fix the issue is to regenerate the 2D coordinates but that will destroy the original orientation of the drawing. The goal here is to show the molecules in the same orientation as they were originally drawn. Ok, now show me the code already! OK, here you go. This should be used in the context of a notebook.
 
 ```python
 import rdkit
@@ -38,11 +38,7 @@ rdkit.__version__
 ```
 
 
-
-
     '2020.03.1'
-
-
 
 We will use Vanillin as example. The below molfile was created with ChemDraw using Structure to Name on a document with ACS Document 1996 style and then copied as molfile.
 
@@ -106,8 +102,6 @@ SVG(draw_molecule(vanillin))
 ```
 
 
-
-
 ![vanillin_ugly](/assets/img/vanillin_ugly.svg)
 
 #### Function for scaling the bond length
@@ -162,8 +156,6 @@ vs = scaleBondLength(vanillin)
 ```python
 SVG(draw_molecule(vs))
 ```
-
-
 
 
 ![vanillin_fixed](../assets/img/vanillin_fixed.svg)
