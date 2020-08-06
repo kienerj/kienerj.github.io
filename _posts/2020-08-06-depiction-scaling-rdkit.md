@@ -19,7 +19,7 @@ RDKits drawing depends on the correct bond length on coordinates level (not pixe
 
 ![vanillin_ugly](/assets/img/vanillin_ugly.png)
 
-This example isn't that terrible. The actual use-cases I overserved due to this issue are unusable. This example however should be somewhat easy to reproduce.
+This example isn't that terrible. The actual use-cases I observed due to this issue are unusable. This example however should be somewhat easy to reproduce.
 
 ## Scaling the bond length
 
@@ -160,3 +160,4 @@ SVG(draw_molecule(vs))
 
 ![vanillin_fixed](../assets/img/vanillin_fixed.svg)
 
+That's it! With this scaling fix and the new `fixedBondLength` option one can now generate structure images which in my opinion are superior to commercial tools especially for usage in web applications.
