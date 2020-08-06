@@ -158,6 +158,6 @@ SVG(draw_molecule(vs))
 ```
 
 
-![vanillin_fixed](../assets/img/vanillin_fixed.svg)
+![vanillin_fixed](/assets/img/vanillin_fixed.svg)
 
 That's it! With this scaling fix and the new `fixedBondLength` option one can now generate structure images which in my opinion are superior to commercial tools especially for usage in web applications.
