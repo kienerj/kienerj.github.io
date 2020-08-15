@@ -29,7 +29,8 @@ class RDKit_Services(object):
         mol = rdMolDraw2D.PrepareMolForDrawing(m)
         mol = self.scaleBondLength(mol)    
         
-        drawer = rdMolDraw2D.MolDraw2DSVG(image_width, image_height)         
+        drawer = rdMolDraw2D.MolDraw2DSVG(image_width, image_height) 
+        drawer.SetFontSize(0.8)
         opts = drawer.drawOptions()
         opts.fixedBondLength = max_bond_length
         opts.bgColor = None

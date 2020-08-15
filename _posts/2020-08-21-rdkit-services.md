@@ -113,7 +113,7 @@ Making these adjustments and setting a grey background on the test html page wil
 
 ![benzene_white_background](/assets/img/benzene_white_background.png)
 
-This is to show another problem. By default the svg image has a white background. Personally I would prefer that to be transparent by default. I don't really see the use case for actually having a background color. Hence as a next step the method is enhanced to generate a transparent background. Having this configurable isn't really needed for our use-case. If a background is needed, one can just set the `img` tags `background-color` via css which is much simpler.
+This is to show another problem. By default the svg image has a white background. Personally I would prefer that to be transparent by default. I don't really see the use case for actually having a background color. Hence as a next step the method is enhanced to generate a transparent background. Having this configurable isn't really needed for our use-case. If a background is needed, one can just set the `img` tags `background-color` via css which is much simpler. We also change the font size to 0.8 as the default atom labels are far too small for my taste.
 
 ```python
     @cherrypy.expose
@@ -122,7 +122,8 @@ This is to show another problem. By default the svg image has a white background
         m = Chem.MolFromSmiles(smiles)
         mol = rdMolDraw2D.PrepareMolForDrawing(m) 
         
-        drawer = rdMolDraw2D.MolDraw2DSVG(image_width, image_height)         
+        drawer = rdMolDraw2D.MolDraw2DSVG(image_width, image_height)
+        drawer.SetFontSize(0.8)
         opts = drawer.drawOptions()
         opts.fixedBondLength = max_bond_length
         opts.bgColor = None
@@ -150,7 +151,7 @@ So what is still wrong with the above implementation?
 
 - It's limited to SMILES
 - The original orientation of the structure drawing is lost (2D coordinates)
-- If it works with 2D /molfile, we should add the bond scaling feature from a [previous post](2020-08-06-depiction-scaling-rdkit.md) 
+- If it works with 2D /molfile, we should add the bond scaling feature from a [previous post](2020-08-06-depiction-scaling-rdkit.md) 
 
 - No Exception handling
 
@@ -261,9 +262,9 @@ The first image is generated from SMILES and has a red background color. The sec
 
 #### Additional Remarks
 
-The method can be further extended to allow the caller to set even more options like settings for `PrepareMoleculeForDrawing`. I would also expect someone to say: 
+The method can be further extended to allow the caller to set even more options like settings for `PrepareMoleculeForDrawing` or the font size. I would also expect someone to say: 
 
-> "Why do I need this. I can just use the new JS wrappers."
+> "Why do I need this. I can just use the new RDKit JS wrappers."
 
 True. But if you go the web service route you will profit from the browsers built-in image caching. This can be a blessing or a burden. Burden because one needs to take care not to show outdated images. To have some control,  you can add `cache-control` header to the response:
 
@@ -273,7 +274,7 @@ cherrypy.response.headers['Cache-Control'] = 'max-age=3600'
 
 In this case the image will be cached in the browser for 1 hour. 
 
-However what also speaks against building the images client-side? Would you really pass the chemical structure info to the client which then has to push it back to the image generation service? Most likely not. In a real application you would most likely push your structure id and have the image generation service be able to fetch the structure from the database using this id. In that case you can also implement cache revalidation by checking directly in the database if the structure has changed and accordingly return early (304 Not Modified). 
+However what also speaks against building the images client-side? In a real application you would most likely push your structure id and not the structure itself and have the image generation service be able to fetch the structure from the database using this id. In that case you can also implement cache revalidation by checking directly in the database if the structure has changed and accordingly return early (304 Not Modified). This will require setting the <pre><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Last-Modified"> Last-Modified</a></pre> or <pre><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag">ETag</a></pre> header on the image response. On top of that I'm not a fan of moving too much "compute" stuff onto the client if it can easily be done server-side. 
 
 
 
